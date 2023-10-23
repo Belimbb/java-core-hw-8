@@ -1,9 +1,8 @@
-package hw8;
+package hw8_attempt2;
+public class Triangle extends Shape {
+    private final static String NAME = "Triangle";
 
-public class Triangle extends Shape{
-    private final static String name = "Triangle";
-
-    public Triangle() {
-        super(name);
+    public static String getName(){
+        return NAME;
     }
 }
