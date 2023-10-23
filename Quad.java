@@ -1,9 +1,9 @@
-package hw8;
+package hw8_attempt2;
 
-public class Quad extends Shape{
-    private final static String name = "Quad";
+public class Quad extends Shape {
+    private final static String NAME = "Quad";
 
-    public Quad() {
-        super(name);
+    public static String getName(){
+        return NAME;
     }
 }

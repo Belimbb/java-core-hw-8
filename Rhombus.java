@@ -1,9 +1,9 @@
-package hw8;
+package hw8_attempt2;
 
-public class Rhombus extends Shape{
-    private final static String name = "Rhombus";
+public class Rhombus extends Shape {
+    private final static String NAME = "Rhombus";
 
-    public Rhombus() {
-        super(name);
+    public static String getName(){
+        return NAME;
     }
 }

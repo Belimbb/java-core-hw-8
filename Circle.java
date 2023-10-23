@@ -1,7 +1,9 @@
-package hw8;
+package hw8_attempt2;
 
 public class Circle extends Shape{
-    private final static String name = "Circle";
+    private final static String NAME = "Circle";
 
-    public Circle() {super(name);}
+    public static String getName(){
+        return NAME;
+    }
 }
