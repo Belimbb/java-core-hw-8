@@ -1,4 +1,5 @@
-package hw8_attempt2;
+package hw8;
+
 public class Triangle extends Shape {
     private final static String NAME = "Triangle";
 

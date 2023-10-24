@@ -1,11 +1,11 @@
-package hw8_attempt2;
+package hw8;
 
 import java.util.Scanner;
 
 public class ShapePrinter {
-    public static void main(String[] args) {
+    public Shape ShapeName() {
         Scanner scanner = new Scanner(System.in);
-        hw8_attempt2.WichShape shape = null;
+        WichShape shape = null;
 
         do {
             System.out.print("Input a shape: ");
@@ -17,8 +17,11 @@ public class ShapePrinter {
                 System.out.println("You wrote incorrect shape. Please try again.");
             }
         } while (shape == null);
-        Shape form = new Shape(shape);
-        System.out.println(form.getShape());
         scanner.close();
+        return new Shape(shape);
+    }
+
+    public void printShape(Shape shape) {
+        System.out.println("Name for entered shape is "+shape.getShape());
     }
 }

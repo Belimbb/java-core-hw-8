@@ -1,4 +1,4 @@
-package hw8_attempt2;
+package hw8;
 
 public class Shape {
     WichShape shape;
@@ -14,16 +14,16 @@ public class Shape {
     public String getShape(){
         switch (shape){
             case CIRCLE -> {
-                return res =Circle.getName();
+                return res = Circle.getName();
             }
             case QUAD -> {
-                return res =Quad.getName();
+                return res = Quad.getName();
             }
             case TRIANGLE -> {
-                return res =Triangle.getName();
+                return res = Triangle.getName();
             }
             case RECTANGLE -> {
-                return res =Rectangle.getName();
+                return res = Rectangle.getName();
             }
             case RHOMBUS -> {
                 return res =Rhombus.getName();

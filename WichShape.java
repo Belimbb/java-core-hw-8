@@ -1,4 +1,4 @@
-package hw8_attempt2;
+package hw8;
 
 public enum WichShape {
     CIRCLE ("Circle"),
