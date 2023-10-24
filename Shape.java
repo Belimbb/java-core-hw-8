@@ -1,21 +1,34 @@
 package hw8;
 
 public class Shape {
+    WichShape shape;
+    String res;
 
-    private final String name;
-
-    public Shape(String name) {
-        this.name = name;
+    public Shape() {
     }
 
-    public String getName(){
-        return name;
+    public Shape(WichShape shape) {
+        this.shape = shape;
     }
 
-    @Override
-    public String toString() {
-        return "Shape{" +
-                "name='" + name + '\'' +
-                '}';
+    public String getShape(){
+        switch (shape){
+            case CIRCLE -> {
+                return res = Circle.getName();
+            }
+            case QUAD -> {
+                return res = Quad.getName();
+            }
+            case TRIANGLE -> {
+                return res = Triangle.getName();
+            }
+            case RECTANGLE -> {
+                return res = Rectangle.getName();
+            }
+            case RHOMBUS -> {
+                return res =Rhombus.getName();
+            }
+        }
+        return null;
     }
 }
